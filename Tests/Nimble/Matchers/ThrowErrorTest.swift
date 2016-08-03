@@ -1,12 +1,12 @@
 import XCTest
 import Nimble
 
-enum Error : ErrorProtocol {
+enum Error : Swift.Error {
     case laugh
     case cry
 }
 
-enum EquatableError : ErrorProtocol {
+enum EquatableError : Swift.Error {
     case parameterized(x: Int)
 }
 
@@ -20,7 +20,7 @@ func ==(lhs: EquatableError, rhs: EquatableError) -> Bool {
     }
 }
 
-enum CustomDebugStringConvertibleError : ErrorProtocol {
+enum CustomDebugStringConvertibleError : Swift.Error {
     case a
     case b
 }

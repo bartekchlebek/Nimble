@@ -1,7 +1,7 @@
 import XCTest
 import Nimble
 
-enum ConvertsToBool : Boolean, CustomStringConvertible {
+enum ConvertsToBool : Int, CustomStringConvertible {
     case trueLike, falseLike
 
     var boolValue : Bool {
